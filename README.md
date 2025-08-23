@@ -1,4 +1,5 @@
 # Installation
-`> sudo ./install.sh`
+`$ sudo ./install.sh`
 
-* [Attributions](/docs/Attributions.md)
+* [Attributions](./docs/Attributions.md)
+* [Changelog](./docs/Changelog.md)

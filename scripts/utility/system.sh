@@ -9,7 +9,7 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     echo "Identified operating system as Linux."
     echo ""
     export OS="Linux"
-    export FONT_INSTALLATION_DIRECTORY="/usr/share/fonts/truetype"
+    export FONT_INSTALLATION_DIRECTORY="/usr/local/share/fonts"
 elif [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
     echo "Identified operating system as Windows."
     echo ""
