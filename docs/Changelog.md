@@ -3,6 +3,14 @@
 > [!NOTE]  
 > **2025-10-22** [Introduction of typefaces](#-new-install-fira-code-and-geist-mono)  
 
+## 2025-10-24
+### 📝 Documentation: Turn-key installation command
+To make this a turn-key solution, include a command that'll encompass more of what is required, including pulling the repository and changing directory. The intent is to lower the required knowledge to publish these dotfiles from scratch on a new host and to make the process, albeit arguably negligibly so, faster (less commands to type), easier (less commands to remember), and more comfortable (the computer does the work instead of you).  
+Note that the home directory may contain spaces, so it's wrapped up in quotation marks.
+
+### 📝 Documentation: Versioning practices
+Elaborate on versioning practices through [`Versioning.md`](../docs/Versioning.md). TThis will clarify the rationale behind using two different versioning schemes and how I differentiate [feature states](../docs/Versioning.md#features-states).
+
 ## 2025-10-23
 ### 🔧 Improvement: Alter typeface installation directory on Arch
 `/usr/share/fonts` is under the purview of the package manager and should not be modified. Change to `/usr/local/share/fonts/`, as per the [official documentation](https://wiki.archlinux.org/title/Fonts).
@@ -10,7 +18,7 @@
 ### ✨ New: Changelog
 Introduce this file to keep a record of changes and to outline rationale for these changes.
 
-## 2025-10-22  
+## 2025-10-22
 ### ✨ New: Ingress to initiate installation process
 Added [`install.sh`](../install.sh) from where all the other scripts are intended to be called from. Execute the command `sudo ./install.sh` to initiate the installation process.
 
