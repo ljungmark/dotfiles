@@ -1,7 +1,18 @@
 #!/bin/bash
 
-TYPEFACE_SOURCE="./assets/typefaces"
 SEGMENT_COLOR=$COLOR_BACKGROUND_CYAN
+TYPEFACE_SOURCE="./assets/typefaces"
+case $OS in
+    MacOS)
+        FONT_INSTALLATION_DIRECTORY="/Library/Fonts"
+        ;;
+    Linux)
+        FONT_INSTALLATION_DIRECTORY="/usr/local/share/fonts"
+        ;;
+    Windows)
+        FONT_INSTALLATION_DIRECTORY="/mnt/c/Windows/Fonts"
+        ;;
+esac
 
 echo -e "${SEGMENT_COLOR} T Y P E F A C E S ${COLOR_RESET}"
 

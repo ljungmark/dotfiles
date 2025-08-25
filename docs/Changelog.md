@@ -3,6 +3,15 @@
 > [!NOTE]  
 > **2025-10-22** [Introduction of typefaces](#-new-install-fira-code-and-geist-mono)  
 
+## 2025-10-25
+### 🔄 Refactoring: Manage typeface decisions in typeface context
+Moving the assignment of `FONT_INSTALLATION_DIRECTORY` to [`typefaces.sh`](../scripts/typefaces.sh) make the decision and the variable more contextually bound to each other. After this change, [`system.sh`](../scripts/utility/system.sh) only determines the operating system, and whatever is contextually relevant for typefaces is handled in [`typefaces.sh`](../scripts/typefaces.sh).
+
+### 🔄 Refactoring: Explicit variable syntax in installation command
+Use explicit variable syntax in installation command, to make it even more abundantly clear that they're variables.
+
+### 🔄 Refactoring: Stylize the header in `README.md`.
+
 ## 2025-10-24
 ### 📝 Documentation: Turn-key installation command
 To make this a turn-key solution, include a command that'll encompass more of what is required, including pulling the repository and changing directory. The intent is to lower the required knowledge to publish these dotfiles from scratch on a new host and to make the process, albeit arguably negligibly so, faster (less commands to type), easier (less commands to remember), and more comfortable (the computer does the work instead of you).  

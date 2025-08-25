@@ -1,8 +1,8 @@
-# dotfiles
+# <sup>●</sup><sub>files</sub>
 
 ## Installation
 ```bash
-git clone https://github.com/ljungmark/dotfiles "$HOME"/dotfiles && cd "$HOME"/dotfiles && sudo ./install.sh
+git clone https://github.com/ljungmark/dotfiles "${HOME}/dotfiles" && cd "${HOME}/dotfiles" && sudo ./install.sh
 ```
 
 ## Navigate the repository
