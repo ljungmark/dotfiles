@@ -2,7 +2,7 @@
 
 SEGMENT_COLOR=$COLOR_BACKGROUND_CYAN
 TYPEFACE_SOURCE="./assets/typefaces"
-case $OS in
+case $DOTFILES_OS in
     MacOS)
         FONT_INSTALLATION_DIRECTORY="/Library/Fonts"
         ;;

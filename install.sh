@@ -10,7 +10,7 @@ echo ""
 source "./scripts/utility/colors.sh"
 source "./scripts/utility/system.sh"
 
-if [[ "$OS" == "Unsupported" ]]; then
+if [[ "$DOTFILES_OS" == "Unsupported" ]]; then
     echo -e "${COLOR_TEXT_RED}Aborting: Unsupported operating system: $OSTYPE${COLOR_RESET}"
     echo ""
     exit 1

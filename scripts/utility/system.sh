@@ -3,15 +3,15 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Identified operating system as MacOS."
     echo ""
-    export OS="MacOS"
+    export DOTFILES_OS="MacOS"
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     echo "Identified operating system as Linux."
     echo ""
-    export OS="Linux"
+    export DOTFILES_OS="Linux"
 elif [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
     echo "Identified operating system as Windows."
     echo ""
-    export OS="Windows"
+    export DOTFILES_OS="Windows"
 else
-    export OS="Unsupported"
+    export DOTFILES_OS="Unsupported"
 fi

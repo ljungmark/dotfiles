@@ -3,6 +3,10 @@
 > [!NOTE]  
 > **2025-10-22** [Introduction of typefaces](#-new-install-fira-code-and-geist-mono)  
 
+## 2025-10-31
+### 🔄 Refactoring: Avoid variable collision
+I prefix the `OS` variable with `DOTFILES_` to avoid collision with variables set by other actors. This does not guarantee that there will be no collisions, but reduces the likelihood.
+
 ## 2025-10-25
 ### 🔄 Refactoring: Manage typeface decisions in typeface context
 Moving the assignment of `FONT_INSTALLATION_DIRECTORY` to [`typefaces.sh`](../scripts/typefaces.sh) make the decision and the variable more contextually bound to each other. After this change, [`system.sh`](../scripts/utility/system.sh) only determines the operating system, and whatever is contextually relevant for typefaces is handled in [`typefaces.sh`](../scripts/typefaces.sh).
