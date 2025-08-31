@@ -7,6 +7,9 @@
 ### 🔄 Refactoring: Avoid variable collision
 I prefix the `OS` variable with `DOTFILES_` to avoid collision with variables set by other actors. This does not guarantee that there will be no collisions, but reduces the likelihood.
 
+### ✨ New: Documentation
+Introduce a place where I'll document capabilities. I also keep track of which systems are supported by any given feature—but that is more for my own sake.
+
 ## 2025-10-25
 ### 🔄 Refactoring: Manage typeface decisions in typeface context
 Moving the assignment of `FONT_INSTALLATION_DIRECTORY` to [`typefaces.sh`](../scripts/typefaces.sh) make the decision and the variable more contextually bound to each other. After this change, [`system.sh`](../scripts/utility/system.sh) only determines the operating system, and whatever is contextually relevant for typefaces is handled in [`typefaces.sh`](../scripts/typefaces.sh).
